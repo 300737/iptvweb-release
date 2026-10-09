@@ -1,0 +1,17 @@
+version: "3"
+services:
+  iptvweb:
+    image: 656688515/iptvweb:latest
+    container_name: iptvweb
+    restart: unless-stopped
+    ports:
+      - "9627:9627"
+    volumes:
+      - iptvweb_data:/app/data
+      - iptvweb_uploads:/app/uploads
+    environment:
+      - TZ=Asia/Shanghai
+
+volumes:
+  iptvweb_data:
+  iptvweb_uploads:
