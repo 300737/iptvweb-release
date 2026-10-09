@@ -13,6 +13,8 @@
 
 **开箱即用 · 零依赖 · 一键打包定制 APK**
 
+[![QQ 群](https://img.shields.io/badge/QQ%E7%BE%A4-770840454-12B7F5?style=for-the-badge&logo=tencentqq&logoColor=white)](https://qm.qq.com/q/770840454)
+
 ---
 
 </div>
@@ -203,6 +205,20 @@ docker restart iptvweb
 ## 📄 开源协议
 
 [MIT License](LICENSE)
+
+---
+
+## 💬 加入交流
+
+<div align="center">
+
+**繁华视界 · QQ 交流群：770840454**
+
+[![加入 QQ 群](https://img.shields.io/badge/%E5%8A%A0%E5%85%A5QQ%E7%BE%A4-770840454-12B7F5?style=for-the-badge&logo=tencentqq&logoColor=white)](https://qm.qq.com/q/770840454)
+
+> 有问题？想要新功能？进群交流，第一时间获取更新通知和技术支持。
+
+</div>
 
 ---
 
