@@ -113,19 +113,6 @@ docker compose up -d
 | `iptvweb_data` | `/app/data` | SQLite 数据库 + 打包模板（base.apk / apktool.jar / keystore） |
 | `iptvweb_uploads` | `/app/uploads` | 定制 APK 产物 + 上传图标 + 日志 + 备份 |
 
-## 🔄 更换模板 APK
-
-容器启动时会自动释放内嵌的繁华直播 base.apk。如需更换为自己的模板：
-
-```bash
-# 1. 上传你的 APK 到服务器
-# 2. 复制进容器替换
-docker cp your_template.apk iptvweb:/app/data/templates/base.apk
-
-# 3. 重启容器
-docker restart iptvweb
-```
-
 ## 📋 客户端定制打包流程
 
 ```
