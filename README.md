@@ -13,7 +13,7 @@
 
 **一行 Docker 命令跑起来 · 内置完整的 IPTV 直播源管理后台 · 自带 APK 定制打包工具链**
 
-[English](README_EN.md) · [更新日志](CHANGELOG.md) · [QQ 交流群](https://qm.qq.com/q/770840454)
+[English](README_EN.md) · [更新日志](CHANGELOG.md) · [QQ 交流群](#-加入交流)
 
 </div>
 
@@ -333,7 +333,7 @@ Docker 镜像额外打包了 JDK 17 与 apktool 工具链，用来支撑客户�
 
 **繁华视界 · QQ 交流群：770840454**
 
-[![加入 QQ 群](https://img.shields.io/badge/%E5%8A%A0%E5%85%A5QQ%E7%BE%A4-770840454-12B7F5?style=for-the-badge&logo=tencentqq&logoColor=white)](https://qm.qq.com/q/770840454)
+> 加群方式：打开 QQ → 「加好友/群」→ 搜索群号 `770840454` 申请入群
 
 有问题？想要新功能？进群交流，第一时间获取更新通知和技术支持。
 
