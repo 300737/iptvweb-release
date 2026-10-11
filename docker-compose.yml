@@ -1,16 +1,33 @@
-version: "3"
+# iptvweb — Docker 一键部署
 services:
   iptvweb:
     image: 656688515/iptvweb:latest
     container_name: iptvweb
     restart: unless-stopped
+
     ports:
+      # 宿主机端口可改，容器端口固定 9627
       - "9627:9627"
+
     volumes:
+      # 数据库 + 打包模板（base.apk / apktool.jar / keystore）
       - iptvweb_data:/app/data
+      # 定制 APK 产物 + 上传图标 + 日志 + 备份
       - iptvweb_uploads:/app/uploads
+
     environment:
       - TZ=Asia/Shanghai
+      # 可选：自定义初始后台账号（仅首次初始化、库里还没有管理员时生效）
+      # - IPTV_SYSTEM_DEFAULT_ADMIN_USERNAME=admin
+      # - IPTV_SYSTEM_DEFAULT_ADMIN_PASSWORD=admin123
+
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+    # 健康检查沿用镜像自带 HEALTHCHECK（GET /api/health），这里不再覆盖
 
 volumes:
   iptvweb_data:
